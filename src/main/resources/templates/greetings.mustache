@@ -1,8 +1,14 @@
 {{>layouts/header}}
 
 <div>
-    <h1>{{id}} {{username}} Hello!</h1>
-<button type="button" class="btn btn-success">눌러주세요</button>
+    {{# id}}
+        <h1>{{id}} {{username}} Hello! </h1>
+    {{/ id}}
+    {{^ id}}
+        <h1>{{username}} Hello! </h1>
+    {{/ id}}
 </div>
+
+<button type="button" class="btn btn-success">눌러주세요</button>
 
 {{>layouts/footer}}
