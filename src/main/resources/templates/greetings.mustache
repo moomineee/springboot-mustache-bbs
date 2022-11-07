@@ -47,7 +47,12 @@
     </nav>
 
 <div>
+    {{# id}}
 <h1>{{id}} {{username}} Hello!</h1>
+    {{/id}}
+    {{^id}}
+        <h1>{{username}}</h1>
+    {{/id}}
 <button type="button" class="btn btn-success">눌러주세요</button>
 </div>
 <!-- footer -->
