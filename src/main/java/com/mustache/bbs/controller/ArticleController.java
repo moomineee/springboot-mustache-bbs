@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-정@RequestMapping( "/articles") // 여기서 articles 해주면 밑에서 안써도 됨
+@RequestMapping( "/articles") // 여기서 articles 해주면 밑에서 안써도 됨
 @Slf4j // 로깅을 위한 어노테이션 log 사용 가능
 public class ArticleController {
     // repository 생성
